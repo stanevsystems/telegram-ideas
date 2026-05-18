@@ -29,10 +29,18 @@ function renderTable(data) {
 }
 
 function formatDate(dateString) {
-  const date = new Date(dateString);
-
-  return date.toLocaleString('ru-RU');
-}
+    if (!dateString) {
+      return '—';
+    }
+  
+    const date = new Date(dateString);
+  
+    if (isNaN(date.getTime())) {
+      return dateString;
+    }
+  
+    return date.toLocaleString('ru-RU');
+  }
 
 function escapeHtml(text) {
   return text
