@@ -1,0 +1,49 @@
+body {
+    margin: 0;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    background: #111827;
+    color: #f9fafb;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  h1 {
+    margin-bottom: 20px;
+  }
+  
+  input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    border: 1px solid #374151;
+    background: #1f2937;
+    color: white;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #1f2937;
+  }
+  
+  th,
+  td {
+    padding: 12px;
+    border-bottom: 1px solid #374151;
+    text-align: left;
+    vertical-align: top;
+  }
+  
+  th {
+    background: #374151;
+    cursor: pointer;
+  }
+  
+  tr:hover {
+    background: #2b3648;
+  }
