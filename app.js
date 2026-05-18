@@ -6,7 +6,10 @@ let ideas = [];
 let descending = true;
 
 async function loadData() {
-  const response = await fetch('./ideas.json');
+    const response = await fetch(
+        `./ideas.json?v=${Date.now()}`
+    );
+    
   ideas = await response.json();
 
   renderTable(ideas);
