@@ -24,7 +24,6 @@ function renderTable(data) {
     row.innerHTML = `
       <td>${formatDate(item.date)}</td>
       <td>${escapeHtml(item.author)}</td>
-      <td>придумал</td>
       <td>${escapeHtml(item.text)}</td>
     `;
 
